@@ -1,6 +1,5 @@
 
 FROM php:8.1-apache
-D
 
 # install dependencies and necessary scripts
 RUN apt-get update && apt-get install -y \
