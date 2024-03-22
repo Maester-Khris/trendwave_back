@@ -21,7 +21,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
     && composer install --no-dev --optimize-autoloader
 
 # we suppose that apache config are unnecessary since we deploying on live server
-# COPY apache.conf /etc/apache2/sites-available/000-default.conf 
+COPY apache.conf /etc/apache2/sites-available/000-default.conf 
 # RUN a2enmod rewrite
 
 EXPOSE 80
